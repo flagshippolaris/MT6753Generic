@@ -27,16 +27,16 @@ ccflags-y += -I$(srctree)/drivers/staging/android/ion \
              -I$(srctree)/drivers/staging/android/ion/mtk
 
 ifeq ($(CONFIG_ARCH_MT6735),y)
-ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/$(MTK_PLATFORM)/dispsys/mt6735/
-ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/$(MTK_PLATFORM)/videox/mt6735/
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/mt6735/dispsys/mt6735/
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/mt6735/videox/mt6735/
 endif
 ifeq ($(CONFIG_ARCH_MT6735M),y)
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/$(MTK_PLATFORM)/dispsys/mt6735m/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/$(MTK_PLATFORM)/videox/mt6735m/
 endif
 ifeq ($(CONFIG_ARCH_MT6753),y)
-ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/$(MTK_PLATFORM)/dispsys/mt6753/
-ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/$(MTK_PLATFORM)/videox/mt6753/
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/mt6735/dispsys/mt6753/
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/video/mt6735/videox/mt6753/
 endif
 
 ifeq ($(CONFIG_CUSTOM_KERNEL_HDMI), "MT8193")
